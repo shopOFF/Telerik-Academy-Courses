@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem-1.-School-classes", "Problem-1.-School-classes\Problem-1.-School-classes.csproj", "{3C0778FA-2E79-4E27-B118-56A925E4623F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem-2.-Students-and-workers", "Problem-2.-Students-and-workers\Problem-2.-Students-and-workers.csproj", "{94171753-396B-4195-8F58-45A074112D61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem-3.-AnimalHierarchy", "Problem 3. AnimalHierarchy\Problem-3.-AnimalHierarchy.csproj", "{10DFD546-A0B2-4911-BB24-ADC7D4BD5BD6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C0778FA-2E79-4E27-B118-56A925E4623F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C0778FA-2E79-4E27-B118-56A925E4623F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C0778FA-2E79-4E27-B118-56A925E4623F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C0778FA-2E79-4E27-B118-56A925E4623F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94171753-396B-4195-8F58-45A074112D61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94171753-396B-4195-8F58-45A074112D61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94171753-396B-4195-8F58-45A074112D61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94171753-396B-4195-8F58-45A074112D61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10DFD546-A0B2-4911-BB24-ADC7D4BD5BD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10DFD546-A0B2-4911-BB24-ADC7D4BD5BD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10DFD546-A0B2-4911-BB24-ADC7D4BD5BD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10DFD546-A0B2-4911-BB24-ADC7D4BD5BD6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
