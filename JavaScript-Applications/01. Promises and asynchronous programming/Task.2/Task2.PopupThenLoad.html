@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <script>
+        (function() {
+    var div = document.createElement("div");
+    div.style.textAlign="center";
+    div.style.width = "600px";
+    div.style.height = "50px";
+    div.style.fontSize = "xx-large";
+    div.style.background = "red";
+    div.style.borderRadius = "25px";
+    div.innerHTML = "Redirecting to a random website in 2 seconds";
+    document.body.appendChild(div);
+
+    var promise = new Promise(function(resolve, reject) {
+        setTimeout(function() {
+            resolve(window.location="http://www.tutorialspoint.com");
+            // reject('something very bad happened')
+        }, 2000);
+    });
+
+    promise
+        .then(function(data) {
+            console.log(data);
+        })
+        .catch(function(error) {
+            console.log(error);
+        });
+}());
+    </script>
+</body>
+
+</html>
