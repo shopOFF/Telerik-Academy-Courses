@@ -1,0 +1,9 @@
+extends ../base
+
+block content
+    h1 #{model.content}     
+    ul
+        li
+            a(href="/all-superheroes") List All Superheroes
+    if user    
+        include ../user/profile

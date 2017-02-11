@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+    meta(charset="UTF-8")
+    title Much Pixels Messenger
+    
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/messenger.css')
+body
+    h1 Much Pixels Messenger
+    div.container
+        div#userFormArea.row
+            div.col-md-12
+                form#userForm
+                    div.form-group
+                        label Enter Username
+                        input#username.form-control.input-lg
+                        br
+                        button.btn.btn-success.btn-lg(type='submit') Login
+
+        div#messageArea.row
+            div.col-md-4
+                div.well
+                    h3 Online Users
+                        ul#users.list-group
+
+            div.col-md-8
+                div#chat.chat
+                form#messageForm
+                    div.form-group
+                        label Enter Message
+                        textarea#message.form-control.input-lg
+                        br
+                        button.btn.btn-success.btn-lg(type='submit') Send Message
+
+script(src='http://code.jquery.com/jquery-latest.min.js')
+script(src='/socket.io/socket.io.js')
+script(src='/main.js')                                
+              

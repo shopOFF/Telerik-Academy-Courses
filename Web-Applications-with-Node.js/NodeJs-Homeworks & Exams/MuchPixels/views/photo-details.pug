@@ -1,0 +1,48 @@
+extends layout
+
+block content
+  div.container-fluid
+    div.row
+      div.col-sm-12
+        div.page-header
+          h1= photoModel.title
+          p Posted by <span class="glyphicon glyphicon-user"></span>
+            a(href=`/profile/${photoModel.author}`) #{photoModel.author}
+            span  on <span class="glyphicon glyphicon-time"></span> #{photoModel.date}</p>
+    div.row
+      div.col-sm-8
+        figure.margin-b-2
+          img.img-responsive(src=`data:${photoModel.contentType};base64,${photoModel.data}`)
+        
+        h3= photoModel.votes + ' votes'
+        div.voting
+          if photoModel.hasUser
+            if photoModel.canUpvote
+              button.fa.fa-camera-retro.vote.fa-4x
+            else 
+              button.fa.fa-thumbs-down.unvote.fa-4x
+        p.lead= photoModel.description
+        hr
+        h3 Comments
+        each comment in photoModel.comments
+          div.well
+            div.media
+              div.media-body
+                p= comment.date
+                h4.margin-t-0
+                  a(href=`/users/${comment.user}`) #{comment.user} 
+                p= comment.content
+            
+        hr
+        if photoModel.hasUser
+          div#comment-box
+            h3 Leave a comment
+            div.well
+              textarea.form-control(type='text', name='content', id='content', autofocus, required)
+              button.btn.btn-default#comment Comment
+        hr
+    hr
+
+    
+  script(src='/js/requester.js')
+  script(src='/js/voter.js')
