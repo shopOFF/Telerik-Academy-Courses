@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Registration form</title>
+    <style media="screen">
+        table {
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 10px;
+            border: 1px solid;
+            height: 20px;
+            border-spacing: 0px;
+        }
+
+        .leftCell {
+            width: 150px;
+            text-align: right;
+            padding-right: 5px;
+        }
+
+        .rightCell {
+            width: 330px;
+            padding-left: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .inputText {
+            width: 300px;
+        }
+
+        .midInputT {
+            width: 232px;
+            padding-right: 5px;
+        }
+
+        .smallInputT {
+            width: 40px;
+        }
+
+        .dropList {
+            width: 230px;
+        }
+
+        .genderList {
+            width: 80px;
+        }
+
+        .bottomCell {
+            width: 483px;
+            border-top: 0px;
+            padding: 5px;
+            text-align: center;
+            background-color: rgba(120, 176, 104, 0.43);
+        }
+    </style>
+</head>
+
+<body>
+    <form class="" action="index.html" method="post">
+        <table class="table1" border="0">
+            <tr>
+                <td class="leftCell">
+                    <b>Last Name</b>
+                </td>
+                <td class="rightCell">
+                    <input class="inputText" type="text" name="lname" value="">
+                </td>
+            </tr>
+
+            <tr>
+                <td class="leftCell">
+                    <b>First Name</b>
+                </td>
+                <td class="rightCell">
+                    <input class="inputText" type="text" name="fname" value="">
+                </td>
+            </tr>
+
+            <tr>
+                <td class="leftCell">
+                    <b>Address</b>
+                </td>
+                <td class="rightCell">
+                    <textarea name="address" rows="3" cols="38"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="leftCell">
+                    <b>City</b>
+                </td>
+                <td class="rightCell">
+                    <input class="midInputT" type="text" name="city" value="">
+                    <b>State</b>
+                    <input class="smallInputT" type="text" name="name" value="">
+                </td>
+
+                <tr>
+                    <td class="leftCell">
+                        <b>Zip/Postal Code</b>
+                    </td>
+                    <td class="rightCell">
+                        <input class="smallInputT" type="text" name="name" value="">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="leftCell">
+                        <b>Country</b>
+                    </td>
+                    <td class="rightCell">
+                        <select class="dropList" name="countyList">
+                            <option value="Bul">Bulgaria</option>
+                            <option value="Usa">United States of America</option>
+                            <option value="Rus">Russia</option>
+                            <option value="Uk">United Kingdom</option>
+                            <option value="Other">Нема такава държава!</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="leftCell">
+                        <b>Phone (country code, area code, number)</b>
+                    </td>
+                    <td class="rightCell"> (+
+                        <input class="smallInputT" type="text" name="name" value=""> )
+                        <input class="smallInputT" type="text" name="name" value=""> -
+                        <input class="inputT" type="text" name="name" value="">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="leftCell">
+                        <b>E-mail</b>
+                    </td>
+                    <td class="rightCell">
+                        <input class="inputText" type="text" name="name" value="">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="leftCell">
+                        <b>Birth date</b>
+                    </td>
+                    <td class="rightCell">
+                        Month
+                        <input class="smallInputT" type="text" name="name" value=""> Day
+                        <input class="smallInputT" type="text" name="name" value=""> Year(4 digit)
+                        <input class="smallInputT" type="text" name="name" value="">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="leftCell">
+                        <b>Gender</b>
+                    </td>
+                    <td class="rightCell">
+                        <select class="genderList" name="">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Wtf">Unknown</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="leftCell">
+                        <b>Starting date</b>
+                    </td>
+                    <td class="rightCell">
+                        <input id="spring" type="radio" name="season" value="spring">
+                        <label for="spring">Spring 2006</label>
+
+                        <input id="summer" type="radio" name="season" value="summer">
+                        <label for="summer">Summer 2006</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="leftCell">
+                        <b>Comments/Questions</b>
+                    </td>
+                    <td class="rightCell">
+                        <textarea name="comments" rows="5" cols="38"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="bottomCell" colspan="2">
+                        <input type="button" name="submit" value="Submit" onclick="alert('You Submitted the Form!')">
+                        <input type="reset" name="reset" value="Clear this form">
+                    </td>
+                </tr>
+            </tr>
+
+        </table>
+    </form>
+</body>
+
+</html>

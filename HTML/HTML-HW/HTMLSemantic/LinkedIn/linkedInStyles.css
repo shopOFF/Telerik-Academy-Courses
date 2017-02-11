@@ -1,0 +1,29 @@
+}
+fieldset {
+    border: 1px solid grey;
+    width: 300px;
+}
+input {
+    border: 1px solid grey;
+}
+.joinButton {
+    position: relative;
+    left: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(129, 223, 130);
+}
+.goButton {
+    position: relative;
+    left: -35px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    background-color: rgb(129, 223, 130);
+}
+.joinButton:hover {
+    background-color: rgb(177, 89, 182);
+}
+.goButton:hover {
+    background-color: rgb(177, 89, 182);
+}
