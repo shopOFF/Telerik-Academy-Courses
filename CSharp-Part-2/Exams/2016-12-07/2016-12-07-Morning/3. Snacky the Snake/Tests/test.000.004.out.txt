@@ -1,0 +1,1 @@
+Snacky will hit a rock at [2,5]

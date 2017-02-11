@@ -1,0 +1,3 @@
+How many digits does this numeral system have? Is there an appropriate built-in functionality?
+String.Replace can simplify things a lot, just be careful in what order you replace
+Think about the data types of the three numbers and the result - how much is 2^40 * 2^40 * 2^40 * 2^40?

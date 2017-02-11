@@ -1,0 +1,35 @@
+# String processing live demo tasks
+
+- **Manipulating strings - comparing, concatanating, searching, extracting, splitting**
+  - `Comparison`
+    - _Task_: Implement lexicographic comparison without using the built-in .NET functionality. Provide feature to ignore string cases.
+    - _[Solution](./ComparingStrings/Startup.cs)_
+  - `Searching`
+    - _Task_: Find all occurrences of a string within another string. Store the indices of those occurrences in a `List<int>`.
+    - _[Solution](./SearcingInStrings/Startup.cs)_
+  - `Substring and extracting strings`
+    - _Task_: Extract all comments from a piece of code(comments are either single line, starting with `//` or multiline `/* */`.
+    - _[Solution](./ExtractComments/Startup.cs)_
+  - `Splitting`
+    - _Task_: Read numbers separated by a given symbol and parse them. (no solution)
+    - _Task_: Count occurences of a string. Give an example where this approach fails.
+    - _[Solution](./CountWithSplit/Startup.cs)_
+- **Other operations**
+  - `Replacing substrings`
+    - _Task_: Sanitize input against XSS, using the built-in string.Replace method.
+    - _[Solution](./SanitizeText/Startup.cs)_
+    - _Task_: Censor a text by a given list/array of swearwords.
+    - _[Solution](./Censorship/Startup.cs)_
+  - `Case transformations`
+    - Brief showcase upper and lowercase methods
+    - _Live demo_: Parse a markdown text. All text between `** **` should be uppercase. All text between ticks(&#96;) should be lowercase. All text between `_ _` should be mixed case. 
+    - _[Solution](./ParseMarkdownUpperLower/Startup.cs)_
+- **Building and Modifying strings**
+  - `StringBuilder`
+    - _Task_: Compress a string. (dummy compression)
+    - _[Solution](./CompressStrings/Startup.cs)_
+    - _Task_: Decompress a string. (not solved, decompress the string compressed in the previous task)
+- **Cultures and Culture-Sensitive Formatting**
+  - `Parsing Numbers and Dates`
+    - _Task_: Parse a date by hand by a given format - example format: `"dd-mmm-yy"` should parse dates like `05-Apr-94`. (not solved)
+    - _Task_: Compare custom parse(without validation) to built-in int.Parse. Why is the custom parse method so much faster? (not solved)

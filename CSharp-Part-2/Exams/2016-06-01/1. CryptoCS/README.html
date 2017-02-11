@@ -1,0 +1,148 @@
+<p><img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/logos/telerik-header-logo.png"></p>
+
+
+
+<h4 id="telerik-academy-season-2016-2017-c-advanced-exam-01-june-2016"><em>Telerik Academy Season 2016-2017 / C# Advanced Exam - 01 June 2016</em></h4>
+
+
+
+<h1 id="task-1-cryptocs">Task 1: CryptoCS</h1>
+
+
+
+<h2 id="description">Description</h2>
+
+<p>John and Jane are a simple couple. They want nothing more than to rule the galaxy. To achieve their goal, they need a way to communicate without being understood by anybody else. So they developed a encryption system for transferring important messages between one another.</p>
+
+<p>The encryption system consists of <strong>adding</strong> or <strong>subtracting</strong> numbers from <strong>two different numeral systems</strong>, and print the result in a <strong>third numeral system</strong>.</p>
+
+<p>The <strong>first number is always in 26-based snumeral system</strong>, consisting of the digits <code>a</code>, <code>b</code>, …, <code>y</code>, <code>z</code>:</p>
+
+<table>
+<thead>
+<tr>
+  <th>Digit</th>
+  <th>Value</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td>a</td>
+  <td>0</td>
+</tr>
+<tr>
+  <td>b</td>
+  <td>1</td>
+</tr>
+<tr>
+  <td>c</td>
+  <td>2</td>
+</tr>
+<tr>
+  <td>d</td>
+  <td>3</td>
+</tr>
+<tr>
+  <td>…</td>
+  <td>….</td>
+</tr>
+<tr>
+  <td>y</td>
+  <td>24</td>
+</tr>
+<tr>
+  <td>z</td>
+  <td>25</td>
+</tr>
+</tbody></table>
+
+
+<p>The <strong>second number is always in 7-based numeral system</strong>, consisting of the digits <code>0</code>, <code>1</code>,<code>2</code>,<code>3</code>,<code>4</code>,<code>5</code> and <code>6</code>. Each digit in this numeral system has its corresponding value, i.e. the digit <code>0</code> has value <code>0</code> (you don’t say…)</p>
+
+<p>The <strong>result number is always in 9-based numeral system</strong>, consisting of the digits <code>0</code>, <code>1</code>,<code>2</code>,<code>3</code>,<code>4</code>,<code>5</code>, <code>6</code>, <code>7</code> and <code>8</code>. Each digit in this numeral system has its corresponding value, i.e. the digit <code>2</code> has value <code>2</code> (…)</p>
+
+<p>Your task is to calculate the result of the operation, <code>+</code> or <code>-</code></p>
+
+
+
+<h2 id="example">Example</h2>
+
+<ul>
+<li>Input:</li>
+</ul>
+
+
+
+<pre class="prettyprint"><code class="language-cmd hljs avrasm">bac (<span class="hljs-number">678</span> <span class="hljs-keyword">in</span> <span class="hljs-keyword">dec</span>)
++
+<span class="hljs-number">10</span>  (<span class="hljs-number">7</span> <span class="hljs-keyword">in</span> <span class="hljs-keyword">dec</span>)
+=
+<span class="hljs-number">841</span> (<span class="hljs-number">685</span> <span class="hljs-keyword">in</span> <span class="hljs-keyword">dec</span>)</code></pre>
+
+
+
+<h2 id="input">Input</h2>
+
+<ul>
+<li>On the first line you will receive the first number in <strong>26-based</strong> numeral system</li>
+<li>On the second line you will receive the operation <strong>(subtraction (-) or addition (+))</strong></li>
+<li>On the third line you will receive the second number in <strong>7-based</strong> numeral system</li>
+</ul>
+
+
+
+<h2 id="output">Output</h2>
+
+<ul>
+<li>Print the result of the operation with the provided numbers in <strong>9-based</strong> numeral system</li>
+</ul>
+
+
+
+<h2 id="constraints">Constraints</h2>
+
+<ul>
+<li>The input will always be valid and in the described format. There is no need to validate it explicitly.</li>
+<li>The number of digits in any number will always be less or equal to 8192 (2^13)</li>
+<li>The second number will always be smaller or equal than the first</li>
+<li><strong>Memory limit</strong>: <strong>TODO</strong> MB</li>
+</ul>
+
+
+
+<h2 id="sample-tests">Sample tests</h2>
+
+
+
+<h3 id="input-1">Input</h3>
+
+
+
+<pre class="prettyprint"><code class="language-bash hljs ">bac
++
+<span class="hljs-number">10</span></code></pre>
+
+
+
+<h3 id="output-1">Output</h3>
+
+
+
+<pre class="prettyprint"><code class="language-bash hljs "><span class="hljs-number">841</span></code></pre>
+
+
+
+<h3 id="input-2">Input</h3>
+
+
+
+<pre class="prettyprint"><code class="language-bash hljs ">xzywvcas
++
+<span class="hljs-number">66666</span></code></pre>
+
+
+
+<h3 id="output-2">Output</h3>
+
+
+
+<pre class="prettyprint"><code class="language-bash hljs "><span class="hljs-number">612462321742</span></code></pre>

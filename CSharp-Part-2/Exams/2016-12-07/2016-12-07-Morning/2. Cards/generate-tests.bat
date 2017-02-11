@@ -1,0 +1,1 @@
+csc Generator.cs /r:System.Core.dll,System.Linq.dll,System.IO.dll && Generator.exe && csc Solution.cs /r:System.IO.dll && Solution.exe --testgen
