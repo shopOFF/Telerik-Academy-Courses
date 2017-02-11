@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<catalog>
+  <albums>
+    <album>
+      <name>The Dark Side of the Moon</name>
+      <artist>Pink Floyd</artist>
+      <year>1973</year>
+      <producer>Pink Floyd</producer>
+      <price>$10.00</price>
+      <songs>
+        <song>
+          <title>Time</title>
+          <duration>4:01</duration>
+        </song>
+        <song>
+          <title>On The Run</title>
+          <duration>3:21</duration>
+        </song>
+        <song>
+          <title>Eclipse</title>
+          <duration>2:31</duration>
+        </song>
+        <song>
+          <title>Brain Damage</title>
+          <duration>2:07</duration>
+        </song>
+        <song>
+          <title>Speak To Me</title>
+          <duration>2:45</duration>
+        </song>
+      </songs>
+    </album>
+    <album>
+      <name>The Wall</name>
+      <artist>Pink Floyd</artist>
+      <year>1979</year>
+      <producer>Bob Ezrin</producer>
+      <price>$20.00</price>
+      <songs>
+        <song>
+          <title>Another Brick in the Wall</title>
+          <duration>4:01</duration>
+        </song>
+        <song>
+          <title>In The Flesh</title>
+          <duration>3:21</duration>
+        </song>
+        <song>
+          <title>The Thin Ice</title>
+          <duration>2:31</duration>
+        </song>
+        <song>
+          <title>Empty Spaces</title>
+          <duration>2:07</duration>
+        </song>
+        <song>
+          <title>Is There Anybody Out There?</title>
+          <duration>2:45</duration>
+        </song>
+      </songs>
+    </album>
+    <album>
+      <name>Hysteria</name>
+      <artist>Def Leppard</artist>
+      <year>1987</year>
+      <producer>Robert John Lange</producer>
+      <price>$15.00</price>
+      <songs>
+        <song>
+          <title>Pour Some Sugar On Me</title>
+          <duration>4:27</duration>
+        </song>
+        <song>
+          <title>Women</title>
+          <duration>5:43</duration>
+        </song>
+        <song>
+          <title>God Of War</title>
+          <duration>2:31</duration>
+        </song>
+        <song>
+          <title>Empty Spaces</title>
+          <duration>2:07</duration>
+        </song>
+        <song>
+          <title>Love Bites</title>
+          <duration>5:47</duration>
+        </song>
+      </songs>
+    </album>
+    <album>
+      <name>Encore</name>
+      <artist>Eminem</artist>
+      <year>2004</year>
+      <producer>Eminem, Dr. Dre, Luis Resto, Mike Elizondo, Mark Batson</producer>
+      <price>$25.00</price>
+      <songs>
+        <song>
+          <title>Mosh</title>
+          <duration>4:01</duration>
+        </song>
+        <song>
+          <title>Ass Like That</title>
+          <duration>3:21</duration>
+        </song>
+        <song>
+          <title>Like Toy Soldiers</title>
+          <duration>2:31</duration>
+        </song>
+        <song>
+          <title>Rain Man</title>
+          <duration>2:07</duration>
+        </song>
+        <song>
+          <title>Just Lose It</title>
+          <duration>2:45</duration>
+        </song>
+      </songs>
+    </album>
+  </albums>
+</catalog>

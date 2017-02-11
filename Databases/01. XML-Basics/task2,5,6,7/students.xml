@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="students.xsl"?>
+<students xmlns:students="urn:students">
+    <student>
+        <name>Pesho</name>
+        <sex>Male</sex>
+        <birthDate>1988/10/10</birthDate>
+        <phone>+359888101010</phone>
+        <email>pesho@abv.bg</email>
+        <course>Databases</course>
+        <specialty>DB</specialty>
+        <facultyNumber>1027666</facultyNumber>
+        <takenExams>
+            <exam>
+                <examName>C# Basics</examName>
+                <tutor>Gosho</tutor>
+                <score>4.5</score>
+            </exam>
+            <exam>
+                <examName>C# Advanced</examName>
+                <tutor>Grisho</tutor>
+                <score>3.5</score>
+            </exam>
+        </takenExams>
+    </student>
+    <student>
+        <name>Tosho</name>
+        <sex>Male</sex>
+        <birthDate>1918/10/10</birthDate>
+        <phone>+359888111111</phone>
+        <email>tosho@abv.bg</email>
+        <course>JavaScript</course>
+        <specialty>C#</specialty>
+        <facultyNumber>1127666</facultyNumber>
+        <takenExams>
+            <exam>
+                <examName>HTML</examName>
+                <tutor>Emo</tutor>
+                <score>5.5</score>
+            </exam>
+            <exam>
+                <examName>C# Advanced</examName>
+                <tutor>Grisho</tutor>
+                <score>4.5</score>
+            </exam>
+        </takenExams>
+    </student>
+    <student>
+        <name>Ivana</name>
+        <sex>Female</sex>
+        <birthDate>1998/10/10</birthDate>
+        <phone>+359888111122</phone>
+        <email>ivana@abv.bg</email>
+        <course>C# Advanced</course>
+        <specialty>JS</specialty>
+        <facultyNumber>2227666</facultyNumber>
+        <takenExams>
+            <exam>
+                <examName>C# Basic</examName>
+                <tutor>Emo</tutor>
+                <score>4.5</score>
+            </exam>
+            <exam>
+                <examName>C# JS OOP</examName>
+                <tutor>Grisho</tutor>
+                <score>5.5</score>
+            </exam>
+            <exam>
+                <examName>C# JS Apps</examName>
+                <tutor>Grisho</tutor>
+                <score>3.5</score>
+            </exam>
+        </takenExams>
+    </student>
+</students>
