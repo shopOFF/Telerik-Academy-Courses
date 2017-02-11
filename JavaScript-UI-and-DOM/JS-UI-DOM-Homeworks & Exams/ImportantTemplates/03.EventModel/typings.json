@@ -1,0 +1,6 @@
+{
+  "globalDependencies": {
+    "chai-jquery": "registry:dt/chai-jquery#1.1.1+20160724063359",
+    "jquery": "registry:dt/jquery#1.10.0+20160704162008"
+  }
+}
