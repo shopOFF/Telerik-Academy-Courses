@@ -1,0 +1,31 @@
+table {
+    border-collapse: collapse;
+    border-bottom: 1px solid rgb(107, 116, 108);
+}
+th {
+    border: 1px solid rgb(107, 116, 108);
+    border-right: none;
+    font-size: 15px;
+    font-weight: normal;
+    font-family: sans-serif;
+    color: white;
+    padding: 5px;
+    padding-right: 70px;
+    background-color: #5CB51C;
+}
+td {
+    border-left: 1px solid rgb(107, 116, 108);
+    font-size: 15px;
+    font-family: sans-serif;
+    padding: 5px;
+}
+img {
+    width: 25px;
+    padding-right: 5px;
+}
+.colored-row{
+  background-color: #ECECD8;
+}
+.first-col{
+  border-left: none;
+}

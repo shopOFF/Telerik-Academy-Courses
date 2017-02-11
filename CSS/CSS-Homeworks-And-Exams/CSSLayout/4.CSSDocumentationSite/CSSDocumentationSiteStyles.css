@@ -1,0 +1,136 @@
+/* global */
+
+body {
+    font-family: arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.6px;
+}
+.main-container {
+    border: 1.7px solid black;
+    width: 690px;
+    height: 540px;
+    display: flex;
+    flex-direction: row;
+    background-color: #F1F1F1;
+}
+
+/* left side*/
+
+nav {
+    width: 20%;
+}
+.home-image {
+    position: relative;
+    display: inline;
+    margin-top: 10px;
+}
+.first-line {
+    color: #8C0504;
+}
+h2 {
+    position: relative;
+    display: inline;
+    font-size: 11px;
+    top: -4px;
+}
+ul {
+    position: relative;
+    font-weight: bold;
+    list-style: none;
+    padding-left: 1px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 12px;
+    /* ili vmesto tezi   padding: 1 0 12px 0; */
+}
+
+/* middle */
+
+section {
+    border: 2px solid #A7A7A7;
+    width: 60%;
+    height: 93%;
+    margin-top: 1px;
+    margin-left: -13px;
+    background-color: white;
+    padding: 5px;
+}
+article {
+    margin-top: 11px;
+}
+hr {
+    border-style: solid;
+    color: #A7A7A7;
+}
+h3 {
+    background-color: #808080;
+    color: white;
+    padding-left: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.first-a {
+    color: #8C0504;
+    margin-left: 5px;
+    font-weight: bold;
+}
+a {
+    color: #8C0504;
+    font-weight: bold;
+}
+.first-article {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.first-article img {
+    margin: 5px 5px 1px;
+    width: 20%;
+    align-self: flex-start;
+}
+.first-article-text {
+    padding: 5px 5px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: -5px;
+    padding-bottom: 10px;
+}
+.first-article-text p {
+    font-weight: bold;
+    margin: 5px 5px;
+}
+
+/* right side */
+
+aside {
+    width: 20%;
+}
+aside>div {
+    border: 2px solid #A7A7A7;
+    margin: 1px;
+    background-color: white;
+    text-align: center;
+    line-height: 10px;
+}
+.search-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2px;
+}
+input[type=text] {
+    width: 70%;
+    height: 12px;
+}
+input[type=button] {
+    height: 17px;
+    width: 14px;
+}
+aside>div a {
+    display: block;
+    margin: 5px 5px;
+}
+.style-image{
+width:  80px;
+}

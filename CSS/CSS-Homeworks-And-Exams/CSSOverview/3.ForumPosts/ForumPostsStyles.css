@@ -1,0 +1,38 @@
+body {
+    background-color: #A9A9A9;
+}
+h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #FAFAD2;
+}
+h2 {
+    text-align: left;
+    font-size: 1.8em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #FAFAD2;
+}
+ul li {
+    list-style-type: none;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+}
+p {
+    font-size: 1.1em;
+}
+footer {
+    font-size: 1.1em;
+    margin-top: 2em;
+    text-align: center;
+}
+label {
+    font-size: 0.9em;
+}
+.underline-item {
+    text-decoration: underline;
+}
+.menu-hover:hover {
+    background-color: #E0EBF3;
+}

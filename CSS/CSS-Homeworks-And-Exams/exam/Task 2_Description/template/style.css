@@ -1,0 +1,130 @@
+html, body {
+    font-family: 'Segoe UI', 'Segoe UI Web', 'Segoe UI Symbol', 'Helvetica Neue', 'BBAlpha Sans', 'S60 Sans', Arial, sans-serif;
+    background-color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+    width: 1000px;
+    font-weight: 400;
+    -webkit-text-stroke-width: 0;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+/*header*/
+
+#shellHeader {
+    position: relative;
+}
+#logo {
+    background-image: url(images/logo.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    display: block;
+    height: 30px;
+    padding-top: 38px;
+    margin-bottom: -2px;
+    margin-left: 10px;
+}
+#headerTitle {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    left: 200px;
+}
+#shellHeader > div.separator {
+    position: absolute;
+    left: 186px;
+    top: 10px;
+    bottom: 10%;
+    width: 5px;
+    height: 45px;
+    border-left: 5px solid #333333;
+}
+#search {
+    margin-left: 12px;
+    text-align: center;
+    position: relative;
+    width: 1000px;
+    height: 65px;
+    background-color: #0078D7;
+}
+#search > input {
+    position: absolute;
+    top: 15px;
+    left: 300px;
+    border: 1px solid #A9A9A9;
+    width: 400px;
+    height: 35px;
+}
+
+/*main*/
+
+#main {
+    margin-top: 0px;
+    margin-left: 27px;
+}
+#main > h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+#main>h2 {
+    font-weight: normal;
+    color: #333333;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#main > hr {
+  width: 967px;
+    height: 5px;
+    background-color: #333333;
+}
+#main > p {
+    color: #333333;
+    font-size: 16px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* Footer */
+
+#footer {
+    width: 1000px;
+    height: 60px;
+    background-color: #505050;
+    margin-left: 12px;
+    margin-top: 30px;
+    position: relative;
+    color: #CCCCCC;
+    font-size: 14px;
+}
+#language {
+    display: block;
+    float: left;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+#copyright {
+    display: block;
+    float: right;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-weight: bold;
+}
+#footerMenu > li {
+    float: left;
+    position: relative;
+    padding-right: 15px;
+    list-style-type: none;
+    top: 20px;
+    left: 475px;
+}
+#footerMenu > li> a {
+    color: #CCCCCC;
+    text-decoration: none;
+}

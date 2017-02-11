@@ -1,0 +1,48 @@
+body {
+    background-color: #595959;
+}
+
+h2 {
+    font-family: sans-serif;
+    font-weight: normal;
+    color: rgba(212, 205, 205, 0.82);
+}
+
+label {
+    font-family: sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+.left-side {
+    float: left;
+}
+
+.right-side {
+    padding-left: 150px;
+    text-align: left;
+}
+
+.yellow-text {
+    color: rgb(236, 235, 137);
+}
+
+.red-text {
+    color: red;
+}
+
+.grey-text {
+    color: rgba(212, 205, 205, 0.82);
+}
+
+.orange-text {
+    color: rgb(222, 112, 22);
+}
+
+.new-line {
+    margin-bottom: 1em;
+}
+
+img {
+    width: 15px;
+}

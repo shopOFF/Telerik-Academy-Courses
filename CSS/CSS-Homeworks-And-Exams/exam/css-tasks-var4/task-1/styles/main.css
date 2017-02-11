@@ -1,0 +1,178 @@
+body {
+    font-family: Helvetica;
+}
+
+body,
+section,
+img,
+div,
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+#wrapper {
+    width: 243px;
+    height: 501px;
+    background-color: #FFFFFF;
+}
+
+#avatar {
+    border-radius: 5px;
+}
+
+#avatar>img {
+    margin-top: 5px;
+    margin-left: 6px;
+    width: 230px;
+    border-radius: 5px;
+}
+
+#wrapper>section>div.user-info {
+    margin-left: 6px;
+    margin-right: 6px;
+    border-bottom: 2px solid #EEEEEE;
+    padding-bottom: 5px;
+}
+
+#main-info>h1 {
+    margin-top: 7px;
+    margin-bottom: 0px;
+    font-size: 26px;
+}
+
+#main-info>h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    letter-spacing: -0.7px;
+}
+
+#label {
+    width: 28px;
+    display: inline-block;
+    border-radius: 2px;
+    background-color: #6CC644;
+    color: #FFFFFF;
+    font-size: 11px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    margin-top: 9px;
+}
+
+#main-info>a {
+    text-decoration: none;
+    color: #4AA6DB;
+    font-size: 13px;
+}
+
+#details {
+    margin-top: 10px;
+    border-top: 2px solid #EEEEEE;
+    border-bottom: 2px solid #EEEEEE;
+    padding-bottom: 10px;
+}
+
+#location {
+    display: inline;
+}
+
+#location>span {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+#location>p {
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    font-size: 14.5px;
+}
+
+#mail>span {
+    display: inline-block;
+}
+
+#mail>p {
+    display: inline-block;
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+
+#mail>p>a {
+    text-decoration: none;
+    color: #4AA6DB;
+    font-size: 14.5px;
+    margin-left: 10px;
+}
+
+#joined>span {
+    display: inline-block;
+}
+
+#joined>p {
+    display: inline-block;
+    margin-top: 9px;
+    margin-left: 10px;
+    font-size: 14.5px;
+    margin-bottom: 0px;
+}
+
+#git-info {
+    display: inline-block;
+    margin-top: 6.5px;
+    margin-left: 14px;
+}
+
+#git-info>div.followers {
+    display: block;
+    color: #A08F7A;
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+#git-info>div.followers>span {
+    display: block;
+    color: #4078C0;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+#git-info>div.starred {
+    position: absolute;
+    top: 435px;
+    left: 115px;
+    display: block;
+    color: #A08F7A;
+    font-size: 11px;
+    text-align: center;
+}
+
+#git-info>div.starred>span {
+    display: block;
+    color: #4078C0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#git-info>div.following {
+    position: absolute;
+    top: 435px;
+    left: 178px;
+    display: block;
+    color: #A08F7A;
+    font-size: 11px;
+    text-align: center;
+}
+
+#git-info>div.following>span {
+    display: block;
+    color: #4078C0;
+    font-size: 28px;
+    font-weight: bold;
+}

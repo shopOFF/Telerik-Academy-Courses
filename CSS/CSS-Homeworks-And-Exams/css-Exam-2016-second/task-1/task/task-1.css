@@ -1,0 +1,124 @@
+body,
+section,
+img,
+div,
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 13px;
+}
+
+#wrapper {
+    border: 2px solid #DFE0E4;
+    border-radius: 5px;
+    height: 808px;
+    margin-top: -3px;
+    width: 741px;
+}
+
+#wrapper>div:nth-child(1)>div.header>div {
+    display: inline-block;
+}
+
+#wrapper>div:nth-child(1)>div.header>img {
+    border: 1px solid #DFE0E4;
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 18px;
+}
+
+#wrapper>div:nth-child(1)>div.header>div>div:nth-child(1)>a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #365899;
+    font-size: 24px;
+    position: absolute;
+    top: 36px;
+    left: 108px;
+}
+
+#wrapper>div:nth-child(1)>div.header>div>div:nth-child(2)>a {
+    text-decoration: none;
+    color: #9999B2;
+    position: absolute;
+    font-size: 18px;
+    top: 64px;
+    left: 108px;
+}
+
+#wrapper>div:nth-child(1)>div.event {
+    border: 1px solid #DFE0E4;
+    margin-top: 23px;
+    margin-left: 20px;
+    margin-right: 18px;
+    height: 525px;
+}
+
+#wrapper>div:nth-child(1)>p {
+    color: #777777;
+    margin: 10px;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 15px;
+    line-height: 27.5px;
+}
+
+#wrapper>div:nth-child(1)>div.event>img {
+    margin-top: 0px;
+    height: 357px;
+    width: 702px;
+}
+
+#wrapper>div:nth-child(1)>div.event>div.title {
+    font-family: serif;
+    font-size: 28px;
+    width: 600px;
+    margin-left: 18px;
+    margin-top: 22px;
+}
+
+#wrapper>div:nth-child(1)>div.event>div.author {
+    color: #A59999;
+    margin-left: 18px;
+    margin-top: 8px;
+}
+
+#wrapper>div:nth-child(1)>div.event>div.capital {
+    color: #A59999;
+    margin-left: 18px;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 16px;
+    top: 12px;
+}
+
+#wrapper>div.footer {
+    margin-left: 59px;
+    position: absolute;
+    font-size: 18px;
+    top: 785px;
+    font-weight: bold;
+}
+
+#wrapper>div.footer>a.like {
+    text-decoration: none;
+    color: #777777;
+}
+
+#wrapper>div.footer>a.comment {
+    text-decoration: none;
+    color: #777777;
+    margin-left: 50px;
+}
+
+#wrapper>div.footer>a.share {
+    text-decoration: none;
+    color: #777777;
+    margin-left: 50px;
+}

@@ -1,0 +1,57 @@
+h1 {
+    margin-top: 7px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    font-size: 1.7em;
+    color: #EFD320;
+    font-weight: normal;
+    letter-spacing: 0.6px;
+}
+img {
+    background: transparent;
+}
+header {
+    height: 60px;
+    background-color: #363636
+}
+section {
+    background-color: #3B3B3B;
+}
+form {
+    position: absolute;
+    top: 25px;
+    left: 75px;
+    font-size: 1.2em;
+    color: white;
+}
+input {
+    margin: 8px;
+    width: 125px;
+    padding-left: 10px;
+}
+p {
+    font-size: 0.75em;
+    font-family: arial;
+    width: 530px;
+    color: #8E8E8E;
+    line-height: 16px;
+    letter-spacing: 0.6px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+span {
+    color: white;
+}
+.main-container {
+    border: 1px solid;
+    border-radius: 5px;
+    width: 575px;
+    height: 265px;
+    background-color: #3B3B3B;
+}
+.go-button {
+    position: absolute;
+    top: 22px;
+    left: 510px;
+    width: 50px;
+}

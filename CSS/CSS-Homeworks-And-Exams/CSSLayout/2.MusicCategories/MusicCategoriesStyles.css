@@ -1,0 +1,65 @@
+.main-container {
+    border: 1px solid #EEEEEE;
+    width: 350px;
+    height: 470px;
+    background-color: #EEEEEE;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    font-family: sans-serif;
+}
+.block-element {
+    border: 1.8px solid rgb(185, 191, 184);
+    height: 80px;
+    background-color: white;
+    padding: 15px;
+    position: relative;
+    margin-top: 33px;
+}
+.image-container {
+    width: 120px;
+    height: 80px;
+    border: 1.5px solid rgb(185, 191, 184);
+    position: fixed;
+}
+.block-text {
+    width: 180px;
+    font-family: sans-serif;
+    font-size: 0.7em;
+    font-weight: 500;
+    position: absolute;
+    left: 151px;
+    top: 15px;
+    float: left;
+}
+.buttons-container {
+    width: 160px;
+    position: absolute;
+    left: 206px;
+    top: 74px;
+}
+.listen-button{
+  width: 5em;
+  height: 1.8em;
+}
+.add-button{
+  width: 4.3em;
+  height: 1.8em;
+}
+.listen-span, .add-span{
+    position: absolute;
+    bottom: 8px;
+    color: white;
+    font-size: 0.8em;
+}
+.listen-span{
+        right: 104px;
+}
+.add-span{
+        right: 42px;
+}
+img {
+    width: 100%;
+    height: 100%;
+}

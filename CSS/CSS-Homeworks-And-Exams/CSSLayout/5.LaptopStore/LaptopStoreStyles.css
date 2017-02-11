@@ -1,0 +1,83 @@
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+.main-container {
+    border: 3px solid black;
+    border-radius: 5px;
+    width: 940px;
+    height: 680px;
+}
+
+/* header elements */
+
+header {
+    text-align: center;
+    margin-top: 15px;
+}
+a {
+    font-size: 30px;
+    font-weight: bold;
+    color: #35ADEF;
+}
+hr {
+    width: 94%;
+    height: 2.2px;
+    background-color: black;
+}
+
+/* left side elements */
+
+article {
+    border: 3px solid black;
+    width: 63.5%;
+    height: 575px;
+    margin: 13px;
+    padding: 5px;
+}
+fieldset {
+    position: relative;
+    display: inline-block;
+    width: 41%;
+    height: 27%;
+    border: 3px solid black;
+    text-align: center;
+    font-size: 25px;
+}
+img {
+    position: absolute;
+    left: 10px;
+    width: 50%;
+}
+.div-text-right {
+    position: relative;
+    /*display: inline-block;*/
+    left: 135px;
+    top: 25px;
+    line-height: 40px;
+    font-size: 20px;
+    width: 110px;
+    text-align: left;
+}
+.div-text-left {
+    position: relative;
+    display: inline;
+    right: 60px;
+    bottom: 15px;
+    line-height: 40px;
+    font-size: 20px;
+    width: 110px;
+}
+/* right side elements */
+.sliders{
+  display: block;
+  position: absolute;
+  font-size: 1.7em;
+  top:21%;
+  left: 42.2%;
+}
+input{
+margin-top: 30px;
+margin-bottom: 30px;
+width: 235px;
+}

@@ -1,0 +1,29 @@
+body,ul,li {
+    font-family: "Arial";
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
+}
+#root > ul > li > div {
+    display: none;
+}
+#root > ul {
+    list-style-type: none;
+}
+#root > ul > li>input {
+visibility: hidden;
+}
+#root > ul {
+    width: 500px;
+    height: 620px;
+    margin-left: 0px;
+    background-color: #205D99;
+}
+#root > ul > li {
+  padding-bottom: 20px;
+  padding-top: 19px;
+    font-size: 25px;
+    border-bottom: 3px solid #79AEE3;
+    color: #E4EFF9;
+    text-align: center;
+}

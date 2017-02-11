@@ -1,0 +1,36 @@
+body {
+    font-family: Roboto;
+    font-size: 16px;
+}
+#wrapper {
+    width: 1279px;
+    height: 480px;
+    background-color: #1A1A1A;
+    position: relative;
+}
+#play {
+    display: inline-block;
+}
+#side-play {
+    display: inline-block;
+
+}
+#side-play > div.playlist-info {
+    display: block;
+    float: left;
+}
+#side-play > div.playlist > ol > li > div > div > h4{
+  color: C6C8D4;
+}
+#side-play > div.playlist > ol > li > div > div > h5{
+    color: C6C8D4;
+}
+#side-play > div.playlist-info > div{
+
+}
+#side-play > div.playlist-info{
+
+}
+#side-play > div.playlist-info > div > h3{
+  color: #FFFEF8;
+}
