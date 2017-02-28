@@ -36,3 +36,24 @@ WHERE Name = 'Phisics'
 --DELETE 
 --FROM Courses
 --WHERE Name='DB'
+
+
+--Broq na tiq ID-ta
+SELECT COUNT(Id)
+FROM Students
+
+--nai golqmoto 4islo
+SELECT MAX(Id)
+FROM Students
+
+--nai malkoto 4islo
+SELECT MIN(Id)
+FROM Students
+
+--sbora na 4islata
+SELECT SUM(Id)
+FROM Students
+
+--srredno na 4islata
+SELECT AVG(Id)
+FROM Students
