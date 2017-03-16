@@ -1,0 +1,39 @@
+﻿
+#container {
+    border: 2px solid #5BC0DE;
+    width: 350px;
+    padding: 20px;
+    padding-bottom: 0px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#ListContainer {
+    border: 1px solid #5BC0DE;
+    width: 140px;
+    padding: 5px;
+    padding-bottom: 0px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#ResultInfo {
+    border: 2px solid #5BC0DE;
+    position: absolute;
+    left: 420px;
+    top: -15px;
+    font-size: medium;
+    width: 235px;
+    padding: 5px;
+    padding-bottom: 0px;
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+#ResultInfo > span.ResultLabel{
+    position: absolute;
+    left: 85px;
+}

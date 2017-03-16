@@ -109,6 +109,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Task-1\RandomNumberGenerator.aspx" />
+    <Content Include="Task-3\StudentsAndCourses.aspx" />
+    <Content Include="Task-3\Styles.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -126,6 +128,13 @@
     </Compile>
     <Compile Include="Task-1\RandomNumberGenerator.aspx.designer.cs">
       <DependentUpon>RandomNumberGenerator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Task-3\StudentsAndCourses.aspx.cs">
+      <DependentUpon>StudentsAndCourses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Task-3\StudentsAndCourses.aspx.designer.cs">
+      <DependentUpon>StudentsAndCourses.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <PropertyGroup>
