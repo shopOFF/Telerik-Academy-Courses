@@ -95,7 +95,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Escaping.aspx" />
+    <Content Include="Task-2\Escaping.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -108,23 +108,23 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="RandomNumberGenerator.aspx" />
+    <Content Include="Task-1\RandomNumberGenerator.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Escaping.aspx.cs">
+    <Compile Include="Task-2\Escaping.aspx.cs">
       <DependentUpon>Escaping.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Escaping.aspx.designer.cs">
+    <Compile Include="Task-2\Escaping.aspx.designer.cs">
       <DependentUpon>Escaping.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RandomNumberGenerator.aspx.cs">
+    <Compile Include="Task-1\RandomNumberGenerator.aspx.cs">
       <DependentUpon>RandomNumberGenerator.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="RandomNumberGenerator.aspx.designer.cs">
+    <Compile Include="Task-1\RandomNumberGenerator.aspx.designer.cs">
       <DependentUpon>RandomNumberGenerator.aspx</DependentUpon>
     </Compile>
   </ItemGroup>

@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Random Number Generator</title>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -19,7 +19,7 @@
             <input id="Button1" type="button" value="Generate Random Number" onserverclick="Button1_Click" runat="server" />
             <br />
             <br />
-            <asp:Literal Text="Generated Number Is: " runat="server" />
+            <asp:Literal ID="TextLiteral" Text="Generated Number Is: " runat="server" />
             <asp:Literal ID="GeneratedNumberLiteral" runat="server" />
         </div>
     </form>
