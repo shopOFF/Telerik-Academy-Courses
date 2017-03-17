@@ -111,6 +111,8 @@
     <Content Include="Task-1\RandomNumberGenerator.aspx" />
     <Content Include="Task-3\StudentsAndCourses.aspx" />
     <Content Include="Task-3\Styles.css" />
+    <Content Include="Task-4\StylesTicTacToe.css" />
+    <Content Include="Task-4\TicTacToe.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -136,7 +138,15 @@
     <Compile Include="Task-3\StudentsAndCourses.aspx.designer.cs">
       <DependentUpon>StudentsAndCourses.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Task-4\TicTacToe.aspx.cs">
+      <DependentUpon>TicTacToe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Task-4\TicTacToe.aspx.designer.cs">
+      <DependentUpon>TicTacToe.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
