@@ -12,8 +12,9 @@ namespace TelerikAcademyHWWebFormsWebHTMLControls.Task_4
         private static int playerCounter = 0;
         private const string X_PLAYER = "X";
         private const string O_PLAYER = "O";
-        private const string WINNER_MESSAGE = "YOU WON!";
-        private const string LOOSER_MESSAGE = "YOU LOST!";
+        private const string WINNER_X_MESSAGE = "PLAYER X WON!";
+        private const string WINNER_O_MESSAGE = "PLAYER O WON!";
+        private const string DRAW_MESSAGE = "DRAW!";
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -113,7 +114,7 @@ namespace TelerikAcademyHWWebFormsWebHTMLControls.Task_4
 
         private string CheckFirsOrSecondPlayer()
         {
-            if (playerCounter % 2 == 0)
+            if (playerCounter % 2 != 0)
             {
                 return X_PLAYER;
             }
@@ -131,7 +132,7 @@ namespace TelerikAcademyHWWebFormsWebHTMLControls.Task_4
                 this.ButtonFirstRowRight.Text == X_PLAYER)
             {
                 this.LabelResult.Visible = true;
-                this.LabelResult.Text = WINNER_MESSAGE;
+                this.LabelResult.Text = WINNER_X_MESSAGE;
                 EnableDisabeField();
             }
             else if (this.ButtonFirstRowLeft.Text == X_PLAYER &&
@@ -139,7 +140,7 @@ namespace TelerikAcademyHWWebFormsWebHTMLControls.Task_4
                 this.ButtonThirdRowRight.Text == X_PLAYER)
             {
                 this.LabelResult.Visible = true;
-                this.LabelResult.Text = WINNER_MESSAGE;
+                this.LabelResult.Text = WINNER_X_MESSAGE;
                 EnableDisabeField();
             }
             else if (this.ButtonFirstRowRight.Text == X_PLAYER &&
@@ -147,7 +148,7 @@ namespace TelerikAcademyHWWebFormsWebHTMLControls.Task_4
                this.ButtonThirdRowRight.Text == X_PLAYER)
             {
                 this.LabelResult.Visible = true;
-                this.LabelResult.Text = WINNER_MESSAGE;
+                this.LabelResult.Text = WINNER_X_MESSAGE;
                 EnableDisabeField();
             }
             else if (this.ButtonFirstRowLeft.Text == X_PLAYER &&
@@ -155,7 +156,7 @@ namespace TelerikAcademyHWWebFormsWebHTMLControls.Task_4
               this.ButtonThirdRowLeft.Text == X_PLAYER)
             {
                 this.LabelResult.Visible = true;
-                this.LabelResult.Text = WINNER_MESSAGE;
+                this.LabelResult.Text = WINNER_X_MESSAGE;
                 EnableDisabeField();
             }
             else if (this.ButtonFirstRowRight.Text == X_PLAYER &&
@@ -163,7 +164,7 @@ namespace TelerikAcademyHWWebFormsWebHTMLControls.Task_4
               this.ButtonThirdRowLeft.Text == X_PLAYER)
             {
                 this.LabelResult.Visible = true;
-                this.LabelResult.Text = WINNER_MESSAGE;
+                this.LabelResult.Text = WINNER_X_MESSAGE;
                 EnableDisabeField();
             }
             else if (this.ButtonFirstRowMiddle.Text == X_PLAYER &&
@@ -171,7 +172,7 @@ namespace TelerikAcademyHWWebFormsWebHTMLControls.Task_4
               this.ButtonThirdRowMiddle.Text == X_PLAYER)
             {
                 this.LabelResult.Visible = true;
-                this.LabelResult.Text = WINNER_MESSAGE;
+                this.LabelResult.Text = WINNER_X_MESSAGE;
                 EnableDisabeField();
             }
 
@@ -180,7 +181,7 @@ namespace TelerikAcademyHWWebFormsWebHTMLControls.Task_4
              this.ButtonSecondRowRight.Text == X_PLAYER)
             {
                 this.LabelResult.Visible = true;
-                this.LabelResult.Text = WINNER_MESSAGE;
+                this.LabelResult.Text = WINNER_X_MESSAGE;
                 EnableDisabeField();
             }
             else if (this.ButtonThirdRowLeft.Text == X_PLAYER &&
@@ -188,7 +189,7 @@ namespace TelerikAcademyHWWebFormsWebHTMLControls.Task_4
             this.ButtonThirdRowRight.Text == X_PLAYER)
             {
                 this.LabelResult.Visible = true;
-                this.LabelResult.Text = WINNER_MESSAGE;
+                this.LabelResult.Text = WINNER_X_MESSAGE;
                 EnableDisabeField();
             }
 
@@ -196,7 +197,7 @@ namespace TelerikAcademyHWWebFormsWebHTMLControls.Task_4
             if (playerCounter == 9)
             {
                 this.LabelResult.Visible = true;
-                this.LabelResult.Text = "DRAW!";
+                this.LabelResult.Text = DRAW_MESSAGE;
                 EnableDisabeField();
             }
 
@@ -206,7 +207,7 @@ namespace TelerikAcademyHWWebFormsWebHTMLControls.Task_4
                this.ButtonFirstRowRight.Text == O_PLAYER)
             {
                 this.LabelResult.Visible = true;
-                this.LabelResult.Text = LOOSER_MESSAGE;
+                this.LabelResult.Text = WINNER_O_MESSAGE;
                 EnableDisabeField();
             }
             else if (this.ButtonFirstRowLeft.Text == O_PLAYER &&
@@ -214,7 +215,7 @@ namespace TelerikAcademyHWWebFormsWebHTMLControls.Task_4
                 this.ButtonThirdRowRight.Text == O_PLAYER)
             {
                 this.LabelResult.Visible = true;
-                this.LabelResult.Text = LOOSER_MESSAGE;
+                this.LabelResult.Text = WINNER_O_MESSAGE;
                 EnableDisabeField();
             }
             else if (this.ButtonFirstRowRight.Text == O_PLAYER &&
@@ -222,7 +223,7 @@ namespace TelerikAcademyHWWebFormsWebHTMLControls.Task_4
                this.ButtonThirdRowRight.Text == O_PLAYER)
             {
                 this.LabelResult.Visible = true;
-                this.LabelResult.Text = LOOSER_MESSAGE;
+                this.LabelResult.Text = WINNER_O_MESSAGE;
                 EnableDisabeField();
             }
             else if (this.ButtonFirstRowLeft.Text == O_PLAYER &&
@@ -230,7 +231,7 @@ namespace TelerikAcademyHWWebFormsWebHTMLControls.Task_4
               this.ButtonThirdRowLeft.Text == O_PLAYER)
             {
                 this.LabelResult.Visible = true;
-                this.LabelResult.Text = LOOSER_MESSAGE;
+                this.LabelResult.Text = WINNER_O_MESSAGE;
                 EnableDisabeField();
             }
             else if (this.ButtonFirstRowRight.Text == O_PLAYER &&
@@ -238,7 +239,7 @@ namespace TelerikAcademyHWWebFormsWebHTMLControls.Task_4
               this.ButtonThirdRowLeft.Text == O_PLAYER)
             {
                 this.LabelResult.Visible = true;
-                this.LabelResult.Text = LOOSER_MESSAGE;
+                this.LabelResult.Text = WINNER_O_MESSAGE;
                 EnableDisabeField();
             }
             else if (this.ButtonFirstRowMiddle.Text == O_PLAYER &&
@@ -246,7 +247,7 @@ namespace TelerikAcademyHWWebFormsWebHTMLControls.Task_4
               this.ButtonThirdRowMiddle.Text == O_PLAYER)
             {
                 this.LabelResult.Visible = true;
-                this.LabelResult.Text = LOOSER_MESSAGE;
+                this.LabelResult.Text = WINNER_O_MESSAGE;
                 EnableDisabeField();
             }
 
@@ -255,7 +256,7 @@ namespace TelerikAcademyHWWebFormsWebHTMLControls.Task_4
              this.ButtonSecondRowRight.Text == O_PLAYER)
             {
                 this.LabelResult.Visible = true;
-                this.LabelResult.Text = LOOSER_MESSAGE;
+                this.LabelResult.Text = WINNER_O_MESSAGE;
                 EnableDisabeField();
             }
             else if (this.ButtonThirdRowLeft.Text == O_PLAYER &&
@@ -263,7 +264,7 @@ namespace TelerikAcademyHWWebFormsWebHTMLControls.Task_4
             this.ButtonThirdRowRight.Text == O_PLAYER)
             {
                 this.LabelResult.Visible = true;
-                this.LabelResult.Text = LOOSER_MESSAGE;
+                this.LabelResult.Text = WINNER_O_MESSAGE;
                 EnableDisabeField();
             }
         }
