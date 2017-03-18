@@ -113,6 +113,8 @@
     <Content Include="Task-3\Styles.css" />
     <Content Include="Task-4\StylesTicTacToe.css" />
     <Content Include="Task-4\TicTacToe.aspx" />
+    <Content Include="Task-5\Styles\CalculatorStyles.css" />
+    <Content Include="Task-5\WebCalculator.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -144,6 +146,13 @@
     </Compile>
     <Compile Include="Task-4\TicTacToe.aspx.designer.cs">
       <DependentUpon>TicTacToe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Task-5\WebCalculator.aspx.cs">
+      <DependentUpon>WebCalculator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Task-5\WebCalculator.aspx.designer.cs">
+      <DependentUpon>WebCalculator.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />

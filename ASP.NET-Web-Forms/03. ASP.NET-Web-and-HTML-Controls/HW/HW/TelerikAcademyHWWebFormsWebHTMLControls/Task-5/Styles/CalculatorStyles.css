@@ -1,0 +1,44 @@
+﻿#calculator-container{
+    margin:50px;
+    border: 2px solid #1494e3;
+    border-radius:5px;
+    width:300px;
+    height:300px;
+}
+#TextBoxOutput{
+    width:252px;
+    height:40px;
+    margin-top:10px;
+    margin-left:22px;
+    font-size:x-large;
+    border:1px solid lightgrey;
+}
+#buttons-container{
+    position:absolute;
+    width:248px;
+    border:1px solid lightgrey;
+    padding:2px;
+    left:82px;
+    top:120px;
+}
+
+#Button1,#Button2,#Button3,#ButtonPlus,#Button4,#Button5,#Button6,#ButtonMinus,#Button7,#Button8,#Button9,#ButtonMultiply,#ButtonClear,#Button0,#ButtonDivis,#ButtonSquareRoot{
+    border:0px;
+    width:63px;
+    height:45px;
+    margin:-2px;
+    background-color:#edeaea;
+    font-size:medium;
+}
+#Button1:hover,#Button2:hover,#Button3:hover,#ButtonPlus:hover,#Button4:hover,#Button5:hover,#Button6:hover,#ButtonMinus:hover,#Button7:hover,#Button8:hover,#Button9:hover,#ButtonMultiply:hover,#ButtonClear:hover,#Button0:hover,#ButtonDivis:hover,#ButtonSquareRoot:hover,#ButtonEquals:hover{
+    background-color:lightgray;
+}
+
+#ButtonEquals{
+    border:0px;
+    width:252px;
+    height:45px;
+    margin:-2px;
+    background-color:#edeaea;
+    font-size:medium;
+}
