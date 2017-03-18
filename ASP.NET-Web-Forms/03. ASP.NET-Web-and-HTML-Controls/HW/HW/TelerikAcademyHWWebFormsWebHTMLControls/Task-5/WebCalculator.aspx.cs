@@ -108,45 +108,53 @@ namespace TelerikAcademyHWWebFormsWebHTMLControls.Task_5
 
         private string ResultCalculator(string equation)
         {
-            var splitEquation = equation.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries).ToList();
-
-            if (splitEquation.Contains("√") && splitEquation.Count == 2)
+            try
             {
-                return Math.Sqrt(long.Parse(splitEquation[0])).ToString();
-            }
-            else if (splitEquation.Count > 1)
-            {
-                double result = long.Parse(splitEquation[0]);
+                var splitEquation = equation.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries).ToList();
 
-                for (int i = 1; i < splitEquation.Count - 1; i++)
+                if (splitEquation.Contains("√") && splitEquation.Count == 2)
                 {
-                    if (splitEquation[i] == "+")
-                    {
-                        result += long.Parse(splitEquation[i + 1]);
-                    }
-                    else if (splitEquation[i] == "-")
-                    {
-                        result -= long.Parse(splitEquation[i + 1]);
-                    }
-                    else if (splitEquation[i] == "√")
-                    {
-                        result = Math.Sqrt(long.Parse(splitEquation[i - 1]));
-                    }
-                    else if (splitEquation[i] == "/")
-                    {
-                        result /= long.Parse(splitEquation[i + 1]);
-                    }
-                    else if (splitEquation[i] == "x")
-                    {
-                        result *= long.Parse(splitEquation[i + 1]);
-                    }
+                    return Math.Sqrt(long.Parse(splitEquation[0])).ToString();
                 }
+                else if (splitEquation.Count > 1)
+                {
+                    double result = long.Parse(splitEquation[0]);
 
-                return result.ToString();
+                    for (int i = 1; i < splitEquation.Count - 1; i++)
+                    {
+                        if (splitEquation[i] == "+")
+                        {
+                            result += long.Parse(splitEquation[i + 1]);
+                        }
+                        else if (splitEquation[i] == "-")
+                        {
+                            result -= long.Parse(splitEquation[i + 1]);
+                        }
+                        else if (splitEquation[i] == "√")
+                        {
+                            result = Math.Sqrt(long.Parse(splitEquation[i - 1]));
+                        }
+                        else if (splitEquation[i] == "/")
+                        {
+                            result /= long.Parse(splitEquation[i + 1]);
+                        }
+                        else if (splitEquation[i] == "x")
+                        {
+                            result *= long.Parse(splitEquation[i + 1]);
+                        }
+                    }
+
+                    return result.ToString();
+                }
+                else
+                {
+                    return this.TextBoxOutput.Text;
+                }
             }
-            else
+            catch (Exception)
             {
-                return this.TextBoxOutput.Text;
+
+                return "INVALID INPUT";
             }
         }
     }
