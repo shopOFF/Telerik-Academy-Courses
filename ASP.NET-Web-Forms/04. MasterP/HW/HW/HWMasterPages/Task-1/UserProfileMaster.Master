@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UserProfileMaster.master.cs" Inherits="HWMasterPages.Task_1.UserProfileMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link href="Styles/Styles.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+             <nav id="Navigation-Container" role="navigation">
+                <ul class="nav nav-pills" >
+                    <li role="presentation"><a href="Home.aspx">Home</a></li>
+                    <li role="presentation"><a href="Profile.aspx">Profile</a></li>
+                    <li role="presentation"><a href="Friends.aspx">Friends</a></li>
+                    <li role="presentation"><a href="AdditionalInfo.aspx">Additional Info</a></li>
+                </ul>
+            </nav>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderMain" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

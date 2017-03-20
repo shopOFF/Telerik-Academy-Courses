@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("TelerikWebFormsHWMasterPages")]
+[assembly: AssemblyTitle("HWMasterPages")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("TelerikWebFormsHWMasterPages")]
+[assembly: AssemblyProduct("HWMasterPages")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("8ab4b4a7-53cf-4444-80e4-01f3e57c431b")]
+[assembly: Guid("49852e66-03ab-4876-b36d-7a0c0034ebc7")]
 
 // Version information for an assembly consists of the following four values:
 //
