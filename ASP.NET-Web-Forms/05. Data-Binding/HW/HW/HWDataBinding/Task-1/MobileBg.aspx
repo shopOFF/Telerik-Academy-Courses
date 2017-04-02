@@ -16,7 +16,7 @@
             </asp:DropDownList>
 
             <asp:DropDownList ID="DropDownListModel"
-                runat="server"> 
+                runat="server">
             </asp:DropDownList>
             <br />
             <br />
@@ -29,6 +29,10 @@
             </asp:RadioButtonList>
 
             <asp:Button ID="ButtonSubmit" runat="server" Text="Search" OnClick="ButtonSubmit_Click" />
+            <br />
+            <br />
+            <div id="ResultInfo" runat="server" visible="false">
+            </div>
         </div>
     </form>
 </body>

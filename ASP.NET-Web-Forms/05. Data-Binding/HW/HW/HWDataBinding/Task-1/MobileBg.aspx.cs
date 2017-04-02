@@ -31,7 +31,7 @@ namespace HWDataBinding.Task_1
                 var extraAlarm = new Extra() { Name = "Alarm" };
                 var listOfExtras = new List<Extra>() { extraAC, extraLeatherSeats, extraNavi, extraESP, extraAlarm };
 
-                this.CheckBoxListExtras.DataSource =listOfExtras.Select(x => x.Name);
+                this.CheckBoxListExtras.DataSource = listOfExtras.Select(x => x.Name);
                 this.CheckBoxListExtras.DataBind();
 
                 this.RadioButtonListEngines.DataSource = new List<string>() { "Petrol", "Diesel", "Electric", "Hybrid" };
@@ -69,26 +69,35 @@ namespace HWDataBinding.Task_1
 
         protected void ButtonSubmit_Click(object sender, EventArgs e)
         {
-            var extras = new List<string>();
-            foreach (ListItem item in CheckBoxListExtras.Items)
+            try
             {
-                if (item.Selected)
-                {
-                    extras.Add(item.Text);
-                }
-            }
-            var sb = new StringBuilder();
-            sb.Append($"Car Brand - {this.DropDownListBrand.SelectedItem.Text}");
-            sb.Append("<br>");
-            sb.Append($"Car Model - {this.DropDownListModel.SelectedItem.Text}");
-            sb.AppendLine("<br>");
-            sb.Append($"Car Extras - {string.Join(", ", extras)}");
-            sb.AppendLine("<br>");
-            sb.Append($"Car Engine Type - {this.RadioButtonListEngines.SelectedItem.Text}");
+                this.ResultInfo.InnerText = string.Empty;
 
-            var literalInfo = new Literal();
-            literalInfo.Text = sb.ToString();
-            this.Form.Controls.Add(literalInfo);
+                var extras = this.CheckBoxListExtras.Items
+               .Cast<ListItem>()
+               .Where(li => li.Selected)
+               .ToList();
+
+                var sb = new StringBuilder();
+                sb.Append($"Car Brand - {this.DropDownListBrand.SelectedItem.Text}");
+                sb.Append("<br>");
+                sb.Append($"Car Model - {this.DropDownListModel.SelectedItem.Text}");
+                sb.AppendLine("<br>");
+                sb.Append($"Car Extras - {string.Join(", ", extras)}");
+                sb.AppendLine("<br>");
+                sb.Append($"Car Engine Type - {this.RadioButtonListEngines.SelectedItem.Text}");
+
+                var literalInfo = new Literal();
+                literalInfo.Text = sb.ToString();
+                this.ResultInfo.Visible = true;
+                this.ResultInfo.Controls.Add(literalInfo);
+            }
+            catch (Exception)
+            {
+                this.ResultInfo.Visible = true;
+                this.ResultInfo.InnerText = "INVALID INPUT!";
+            }
+
         }
     }
 }
