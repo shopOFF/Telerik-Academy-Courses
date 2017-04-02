@@ -19,7 +19,7 @@ namespace Data_Binding_Simple_Example
                 this.ListBoxTowns.DataBind();
 
 				// Bind the Yes/No drop-down-list
-				var answers = new string[] { "Yes", "No" };
+				var answers = new string[] { "Yes", "No","Maybe" };
 				this.DropDownYesNo.DataSource = answers;
 				this.DropDownYesNo.DataBind();
             }
