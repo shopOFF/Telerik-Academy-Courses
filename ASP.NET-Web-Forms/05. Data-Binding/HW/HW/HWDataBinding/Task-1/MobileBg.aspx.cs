@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -16,29 +17,47 @@ namespace HWDataBinding.Task_1
                 var defaultBrand = new Brand("Choose Brand");
                 var brandMercedes = new Brand("Mercedes");
                 var brandBmw = new Brand("BMW");
-
-                var listOfBrands = new List<Brand>() {defaultBrand, brandMercedes, brandBmw };
+                var brandAudi = new Brand("Audi");
+                var brandVW = new Brand("Volkswagen");
+                var listOfBrands = new List<Brand>() { defaultBrand, brandMercedes, brandBmw, brandAudi, brandVW };
 
                 this.DropDownListBrand.DataSource = listOfBrands.Select(x => x.Name);
                 this.DropDownListBrand.DataBind();
+
+                var extraAC = new Extra() { Name = "AC" };
+                var extraLeatherSeats = new Extra() { Name = "Leather Seats" };
+                var extraNavi = new Extra() { Name = "Navigation" };
+                var extraESP = new Extra() { Name = "ESP" };
+                var extraAlarm = new Extra() { Name = "Alarm" };
+                var listOfExtras = new List<Extra>() { extraAC, extraLeatherSeats, extraNavi, extraESP, extraAlarm };
+
+                this.CheckBoxListExtras.DataSource =listOfExtras.Select(x => x.Name);
+                this.CheckBoxListExtras.DataBind();
+
+                this.RadioButtonListEngines.DataSource = new List<string>() { "Petrol", "Diesel", "Electric", "Hybrid" };
+                this.RadioButtonListEngines.DataBind();
             }
         }
 
         protected void DropDownListBrand_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var mercedesModels = new List<string>() {"A class", "B class", "C class" ,
-                "E class", "S class", "ML class", "GLK class","G class" };
-
-            var bmwModels = new List<string>() { "1 series" , "2 series" , "3 series" ,
-                "4 series" , "5 series" , "6 series" , "7 series" ,"X5 series","X6 series"};
-
             if (this.DropDownListBrand.SelectedValue == "Mercedes")
             {
-                this.DropDownListModel.DataSource = mercedesModels;
+                this.DropDownListModel.DataSource = ModelGenerator.GetMercedesModels();
             }
             else if (this.DropDownListBrand.SelectedValue == "BMW")
             {
-                this.DropDownListModel.DataSource = bmwModels;
+                this.DropDownListModel.DataSource = ModelGenerator.GetBMWModels();
+
+            }
+            else if (this.DropDownListBrand.SelectedValue == "Audi")
+            {
+                this.DropDownListModel.DataSource = ModelGenerator.GetAudiModels();
+
+            }
+            else if (this.DropDownListBrand.SelectedValue == "Volkswagen")
+            {
+                this.DropDownListModel.DataSource = ModelGenerator.GetVWModels();
 
             }
             else
@@ -46,6 +65,30 @@ namespace HWDataBinding.Task_1
                 this.DropDownListModel.DataSource = string.Empty;
             }
             this.DropDownListModel.DataBind();
+        }
+
+        protected void ButtonSubmit_Click(object sender, EventArgs e)
+        {
+            var extras = new List<string>();
+            foreach (ListItem item in CheckBoxListExtras.Items)
+            {
+                if (item.Selected)
+                {
+                    extras.Add(item.Text);
+                }
+            }
+            var sb = new StringBuilder();
+            sb.Append($"Car Brand - {this.DropDownListBrand.SelectedItem.Text}");
+            sb.Append("<br>");
+            sb.Append($"Car Model - {this.DropDownListModel.SelectedItem.Text}");
+            sb.AppendLine("<br>");
+            sb.Append($"Car Extras - {string.Join(", ", extras)}");
+            sb.AppendLine("<br>");
+            sb.Append($"Car Engine Type - {this.RadioButtonListEngines.SelectedItem.Text}");
+
+            var literalInfo = new Literal();
+            literalInfo.Text = sb.ToString();
+            this.Form.Controls.Add(literalInfo);
         }
     }
 }

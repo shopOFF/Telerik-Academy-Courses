@@ -112,6 +112,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Task-1\Brand.cs" />
+    <Compile Include="Task-1\Extra.cs" />
     <Compile Include="Task-1\MobileBg.aspx.cs">
       <DependentUpon>MobileBg.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -119,6 +120,7 @@
     <Compile Include="Task-1\MobileBg.aspx.designer.cs">
       <DependentUpon>MobileBg.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Task-1\ModelGenerator.cs" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

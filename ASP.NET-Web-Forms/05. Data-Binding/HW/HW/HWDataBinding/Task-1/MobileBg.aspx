@@ -18,6 +18,17 @@
             <asp:DropDownList ID="DropDownListModel"
                 runat="server"> 
             </asp:DropDownList>
+            <br />
+            <br />
+            <p>Extras</p>
+            <asp:CheckBoxList ID="CheckBoxListExtras" runat="server">
+            </asp:CheckBoxList>
+            <br />
+            <p>Engine Type</p>
+            <asp:RadioButtonList ID="RadioButtonListEngines" runat="server" RepeatDirection="Horizontal">
+            </asp:RadioButtonList>
+
+            <asp:Button ID="ButtonSubmit" runat="server" Text="Search" OnClick="ButtonSubmit_Click" />
         </div>
     </form>
 </body>
