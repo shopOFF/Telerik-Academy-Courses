@@ -10,16 +10,37 @@ namespace HWDataBinding.Task_1
 {
     public partial class MobileBg : System.Web.UI.Page
     {
+        private Brand defaultBrand = new Brand("Choose Brand");
+
+        private Brand brandMercedes = new Brand("Mercedes")
+        {
+            CollectionOfModels = new List<string>()
+        { "A class", "B class", "C class" , "E class", "S class", "ML class", "GLK class","G class" }
+        };
+
+        private Brand brandBmw = new Brand("BMW")
+        {
+            CollectionOfModels = new List<string>()
+        { "1 series" , "2 series" , "3 series" ,"4 series" , "5 series" , "6 series" , "7 series" ,"X5 series","X6 series" }
+        };
+
+        private Brand brandAudi = new Brand("Audi")
+        {
+            CollectionOfModels = new List<string>()
+        { "A 1", "A 3", "A 4","A 6", "A 7", "A 8", "RS 6", "Q 7", "R 8" }
+        };
+
+        private Brand brandVW = new Brand("Volkswagen")
+        {
+            CollectionOfModels = new List<string>()
+        { "Polo", "Golf", "Passat","Phaeton", "Touareg", "Scirocco", "Jetta", "Tiguan", "Beetle" }
+        };
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!Page.IsPostBack)
             {
-                var defaultBrand = new Brand("Choose Brand");
-                var brandMercedes = new Brand("Mercedes");
-                var brandBmw = new Brand("BMW");
-                var brandAudi = new Brand("Audi");
-                var brandVW = new Brand("Volkswagen");
-                var listOfBrands = new List<Brand>() { defaultBrand, brandMercedes, brandBmw, brandAudi, brandVW };
+                var listOfBrands = new List<Brand>() { this.defaultBrand, this.brandMercedes, this.brandBmw, this.brandAudi, this.brandVW };
 
                 this.DropDownListBrand.DataSource = listOfBrands.Select(x => x.Name);
                 this.DropDownListBrand.DataBind();
@@ -43,21 +64,21 @@ namespace HWDataBinding.Task_1
         {
             if (this.DropDownListBrand.SelectedValue == "Mercedes")
             {
-                this.DropDownListModel.DataSource = ModelGenerator.GetMercedesModels();
+                this.DropDownListModel.DataSource = this.brandMercedes.CollectionOfModels;
             }
             else if (this.DropDownListBrand.SelectedValue == "BMW")
             {
-                this.DropDownListModel.DataSource = ModelGenerator.GetBMWModels();
+                this.DropDownListModel.DataSource = this.brandBmw.CollectionOfModels;
 
             }
             else if (this.DropDownListBrand.SelectedValue == "Audi")
             {
-                this.DropDownListModel.DataSource = ModelGenerator.GetAudiModels();
+                this.DropDownListModel.DataSource = this.brandAudi.CollectionOfModels;
 
             }
             else if (this.DropDownListBrand.SelectedValue == "Volkswagen")
             {
-                this.DropDownListModel.DataSource = ModelGenerator.GetVWModels();
+                this.DropDownListModel.DataSource = this.brandVW.CollectionOfModels;
 
             }
             else

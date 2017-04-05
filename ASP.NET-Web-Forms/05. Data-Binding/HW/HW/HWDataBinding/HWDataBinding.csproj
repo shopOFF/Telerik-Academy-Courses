@@ -120,7 +120,6 @@
     <Compile Include="Task-1\MobileBg.aspx.designer.cs">
       <DependentUpon>MobileBg.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Task-1\ModelGenerator.cs" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
