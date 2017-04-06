@@ -107,6 +107,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Task-1\MobileBg.aspx" />
+    <Content Include="Task-2\EmpDetails.aspx" />
+    <Content Include="Task-2\Employees.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -120,7 +122,22 @@
     <Compile Include="Task-1\MobileBg.aspx.designer.cs">
       <DependentUpon>MobileBg.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Task-2\EmpDetails.aspx.cs">
+      <DependentUpon>EmpDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Task-2\EmpDetails.aspx.designer.cs">
+      <DependentUpon>EmpDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Task-2\Employees.aspx.cs">
+      <DependentUpon>Employees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Task-2\Employees.aspx.designer.cs">
+      <DependentUpon>Employees.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
