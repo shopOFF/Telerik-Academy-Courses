@@ -11,7 +11,8 @@ namespace HWDataBinding.Task_2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            var uri = Request.Url.AbsoluteUri;
+            this.OutputLabel.InnerText = $"GREDAAAAA!!! Selected Customer ID = {uri.Substring(uri.Length - 1)}";
         }
 
         protected void ButtonBack_Click(object sender, EventArgs e)

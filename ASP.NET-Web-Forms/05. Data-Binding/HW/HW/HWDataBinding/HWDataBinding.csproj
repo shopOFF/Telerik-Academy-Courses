@@ -109,6 +109,7 @@
     <Content Include="Task-1\MobileBg.aspx" />
     <Content Include="Task-2\EmpDetails.aspx" />
     <Content Include="Task-2\Employees.aspx" />
+    <Content Include="Task-2\EmployeesFormView.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -135,6 +136,13 @@
     </Compile>
     <Compile Include="Task-2\Employees.aspx.designer.cs">
       <DependentUpon>Employees.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Task-2\EmployeesFormView.aspx.cs">
+      <DependentUpon>EmployeesFormView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Task-2\EmployeesFormView.aspx.designer.cs">
+      <DependentUpon>EmployeesFormView.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />

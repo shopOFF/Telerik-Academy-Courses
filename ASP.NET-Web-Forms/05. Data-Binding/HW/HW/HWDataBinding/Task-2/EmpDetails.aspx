@@ -8,11 +8,11 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-    <label>GREDAAAAA</label>
-        <br />
-        <asp:Button ID="ButtonBack" runat="server" Text="Go Back" OnClick="ButtonBack_Click"/>
-    </div>
+        <div>
+            <label id="OutputLabel" runat="server"></label>
+            <br />
+            <asp:Button ID="ButtonBack" runat="server" Text="Go Back" OnClick="ButtonBack_Click" />
+        </div>
     </form>
 </body>
 </html>

@@ -11,10 +11,10 @@
         <div>
             <asp:GridView ID="GridViewEmployees" runat="server" AutoGenerateColumns="False" DataKeyNames="EmployeeID" DataSourceID="SqlDataSourceEmployees">
                 <Columns>
-                    <asp:HyperLinkField DataTextField="FirstName" DataNavigateUrlFields="EmployeeID" DataNavigateUrlFormatString="EmpDetails.aspx"
+                    <asp:HyperLinkField DataTextField="FirstName" DataNavigateUrlFields="EmployeeID" DataNavigateUrlFormatString="EmpDetails.aspx?id={0}"
                         HeaderText="First Name" />
-                    <asp:HyperLinkField DataTextField="LastName" DataNavigateUrlFields="EmployeeID" DataNavigateUrlFormatString="EmpDetails.aspx"
-                        HeaderText="Last Name" />
+                    <asp:HyperLinkField DataTextField="LastName" DataNavigateUrlFields="EmployeeID" DataNavigateUrlFormatString="EmpDetails.aspx?id={0}"
+                        HeaderText="Last Name"/>
                     <asp:BoundField DataField="EmployeeID" HeaderText="EmployeeID" InsertVisible="False" ReadOnly="True" SortExpression="EmployeeID" />
                 </Columns>
             </asp:GridView>
