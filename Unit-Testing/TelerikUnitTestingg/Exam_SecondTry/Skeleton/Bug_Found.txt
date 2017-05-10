@@ -1,0 +1,9 @@
+// Tova e buga, ne tarsi pravilno v kolekciqta, namira se v class---- PackageRepository     
+
+ var packageFound = this.packages.SingleOrDefault(x => x.Equals(package));
+
+
+SORRY za 6liokavicata mn barzam :)
+
+
+
