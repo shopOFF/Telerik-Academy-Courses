@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HWDataBinding.Task_2 {
+namespace DataSourceControlsHW {
     
     
-    public partial class EmpDetails {
+    public partial class Continents {
         
         /// <summary>
         /// form1 control.
@@ -22,30 +22,12 @@ namespace HWDataBinding.Task_2 {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// OutputLabel control.
+        /// ListBoxContinents control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl OutputLabel;
-        
-        /// <summary>
-        /// DetailsViewOutput control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DetailsView DetailsViewOutput;
-        
-        /// <summary>
-        /// ButtonBack control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonBack;
+        protected global::System.Web.UI.WebControls.ListBox ListBoxContinents;
     }
 }

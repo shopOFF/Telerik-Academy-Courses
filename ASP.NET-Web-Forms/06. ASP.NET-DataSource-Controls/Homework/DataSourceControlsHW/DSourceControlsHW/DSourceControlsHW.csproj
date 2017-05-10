@@ -9,12 +9,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{1B199DD2-76F9-44E4-A57D-30CF9C3ED960}</ProjectGuid>
+    <ProjectGuid>{9AB6F995-2789-41F3-ACB8-872273CA0B80}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HWDataBinding</RootNamespace>
-    <AssemblyName>HWDataBinding</AssemblyName>
+    <RootNamespace>DSourceControlsHW</RootNamespace>
+    <AssemblyName>DSourceControlsHW</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -43,6 +43,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.0.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
       <Private>True</Private>
@@ -76,6 +80,9 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -98,6 +105,13 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <EntityDeploy Include="Earth.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Earth.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Earth.edmx.diagram">
+      <DependentUpon>Earth.edmx</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -106,47 +120,72 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Task-1\MobileBg.aspx" />
-    <Content Include="Task-2\EmpDetails.aspx" />
-    <Content Include="Task-2\Employees.aspx" />
-    <Content Include="Task-2\EmployeesFormView.aspx" />
+    <Content Include="Continents.aspx" />
+    <Content Include="Countries.aspx" />
+    <Content Include="Earth.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Earth.edmx</DependentUpon>
+      <LastGenOutput>Earth.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Earth.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Earth.edmx</DependentUpon>
+      <LastGenOutput>Earth.cs</LastGenOutput>
+    </Content>
+    <Content Include="Towns.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Continent.cs">
+      <DependentUpon>Earth.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Continents.aspx.cs">
+      <DependentUpon>Continents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Continents.aspx.designer.cs">
+      <DependentUpon>Continents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Countries.aspx.cs">
+      <DependentUpon>Countries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Countries.aspx.designer.cs">
+      <DependentUpon>Countries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Country.cs">
+      <DependentUpon>Earth.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Earth.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Earth.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Earth.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Earth.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Earth.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Earth.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Task-1\Brand.cs" />
-    <Compile Include="Task-1\Extra.cs" />
-    <Compile Include="Task-1\MobileBg.aspx.cs">
-      <DependentUpon>MobileBg.aspx</DependentUpon>
+    <Compile Include="Town.cs">
+      <DependentUpon>Earth.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Towns.aspx.cs">
+      <DependentUpon>Towns.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Task-1\MobileBg.aspx.designer.cs">
-      <DependentUpon>MobileBg.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Task-2\EmpDetails.aspx.cs">
-      <DependentUpon>EmpDetails.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Task-2\EmpDetails.aspx.designer.cs">
-      <DependentUpon>EmpDetails.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Task-2\Employee.cs" />
-    <Compile Include="Task-2\Employees.aspx.cs">
-      <DependentUpon>Employees.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Task-2\Employees.aspx.designer.cs">
-      <DependentUpon>Employees.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Task-2\EmployeesFormView.aspx.cs">
-      <DependentUpon>EmployeesFormView.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Task-2\EmployeesFormView.aspx.designer.cs">
-      <DependentUpon>EmployeesFormView.aspx</DependentUpon>
+    <Compile Include="Towns.aspx.designer.cs">
+      <DependentUpon>Towns.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -160,9 +199,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>62891</DevelopmentServerPort>
+          <DevelopmentServerPort>51612</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:62891/</IISUrl>
+          <IISUrl>http://localhost:51612/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

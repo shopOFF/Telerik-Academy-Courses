@@ -11,6 +11,9 @@
         <div>
             <label id="OutputLabel" runat="server"></label>
             <br />
+            <asp:DetailsView ID="DetailsViewOutput" runat="server" Height="50px" Width="125px" AutoGenerateRows="true" AllowPaging="True" OnPageIndexChanging="DetailsViewOutput_PageIndexChanging">
+           
+            </asp:DetailsView>
             <asp:Button ID="ButtonBack" runat="server" Text="Go Back" OnClick="ButtonBack_Click" />
         </div>
     </form>
