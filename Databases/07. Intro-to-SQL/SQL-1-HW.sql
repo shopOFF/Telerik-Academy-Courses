@@ -1,4 +1,21 @@
-Structured Query Language (SQL)
+-- 1. Structured Query Language) is a special-purpose programming language designed for managing data
+-- held in a relational database management system (RDBMS)
+-- DML is abbreviation of Data Manipulation Language. It is used to retrieve, store, 
+-- modify, delete, insert and update data in database.
+-- Examples: SELECT, UPDATE, INSERT statements
+-- DDL is abbreviation of Data Definition Language. It is used to create and modify the structure 
+-- of database objects in database.
+-- Examples: CREATE, ALTER, DROP statements
+
+-- 2. Transact-SQL (T-SQL) is Microsoft's and Sybase's proprietary extension to SQL. SQL, 
+-- the acronym for Structured Query Language, is a standardized computer language that was 
+-- originally developed by IBM for querying, altering and defining relational databases, 
+-- using declarative statements.
+
+-- Queries can be executed one at the time by selecting the relevant text and pressing F5
+
+
+USE TelerikAcademy
 
 -- 4. Write a SQL query to find all information about all departments (use "TelerikAcademy" database).
 SELECT * FROM Departments 
@@ -19,7 +36,7 @@ SELECT COALESCE(FirstName + ' ', '') + COALESCE(MiddleName + '. ', '') + COALESC
 FROM Employees
 	
 -- 8. Write a SQL query to find the email addresses of each employee (by his first and last name). Consider that the mail domain is telerik.com.
- Emails should look like â€œJohn.Doe@telerik.com". The produced column should be named "Full Email Addresses".
+-- Emails should look like “John.Doe@telerik.com". The produced column should be named "Full Email Addresses".
 
  SELECT FirstName + '.' + LastName + '@telerik.com' AS [Full Name]
 FROM Employees
@@ -33,7 +50,7 @@ SELECT
 DISTINCT Salary
 FROM Employees
 		
--- 10. Write a SQL query to find all information about the employees whose job title is â€œSales Representativeâ€œ.	
+-- 10. Write a SQL query to find all information about the employees whose job title is “Sales Representative“.	
 
 SELECT *
 FROM Employees 
@@ -51,7 +68,7 @@ SELECT FirstName, MiddleName, LastName
 FROM Employees 
 WHERE LastName LIKE '%ei%'
 
--- 13. Write a SQL query to find the salary of all employees whose salary is in the range [20000â€¦30000].
+-- 13. Write a SQL query to find the salary of all employees whose salary is in the range [20000…30000].
 
 SELECT FirstName, MiddleName, LastName, Salary
 FROM Employees 
@@ -151,47 +168,3 @@ JOIN Departments d
 ON e.DepartmentID=d.DepartmentID
 WHERE d.Name = 'Sales' OR d.Name = 'Finance'
 AND YEAR(e.HireDate) BETWEEN 1995 AND 2005
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
